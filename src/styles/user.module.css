@@ -1,0 +1,80 @@
+.userRed {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e36d63;
+  margin: 15px;
+color: white;
+  border-radius: 10px;
+  width: 130px;
+  transition: .3s;
+  
+}
+.userRed:hover{
+    width: 100% !important;
+}
+.userGreen{
+  background-color: #95BFA9;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 130px;
+  color: #325C46;
+  transition: 0.3s;
+}
+.userGreen:hover{
+    width: 100% !important;
+}
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.068);
+  width: 120px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.avatar {
+  width: 100px;
+}
+.level,
+.points {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  padding: 3px 5px;
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.information {
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.name{
+    font-size: 30px;
+    margin: 20px  0 0;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.awards{
+    display: flex;
+    justify-content: center;
+}
+.awards div{
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
