@@ -1,29 +1,29 @@
+.container {
+  position: relative;
+}
+.userGreen,
 .userRed {
   display: flex;
   justify-content: space-between;
   background-color: #e36d63;
-  margin: 15px;
-color: white;
-  border-radius: 10px;
-  width: 130px;
-  transition: .3s;
-  
-}
-.userRed:hover{
-    width: 100% !important;
-}
-.userGreen{
-  background-color: #95BFA9;
-  margin: 15px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 10px;
-  width: 130px;
-  color: #325C46;
+  margin: 15px 0;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  width: 120px;
   transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
 }
-.userGreen:hover{
-    width: 100% !important;
+.userGreen {
+  background-color: #95bfa9;
+  color: #325c46;
+}
+
+.container:hover > .userGreen,
+.container:hover > .userRed {
+  width: 100% !important;
+  border-radius: 10px;
 }
 .userProfile {
   display: flex;
@@ -36,6 +36,13 @@ color: white;
 }
 .avatar {
   width: 100px;
+}
+
+.level {
+  margin-bottom: 30px;
+}
+.points {
+  margin-top: 30px;
 }
 .level,
 .points {
@@ -57,24 +64,61 @@ color: white;
 .information {
   text-align: center;
   width: 100%;
+  min-width: 360px;
   padding: 0 10px;
 }
 
-.name{
-    font-size: 30px;
-    margin: 20px  0 0;
+.name {
+  font-size: 30px;
+  margin: 20px 0 0;
 }
-.details{
-    display: flex;
-    justify-content: space-between;
+.detailsGroup {
+  display: flex;
+  justify-content: space-between;
 }
-.awards{
-    display: flex;
-    justify-content: center;
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
-.awards div{
-    margin: 0 8px;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
+.stats div {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.stateTitle {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desc {
+  background-color: white;
+  width: calc(100% - 120px);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  border-radius: 0 10px 10px 0;
+  padding: 0 15px;
+}
+
+.desc p {
+  text-align: left;
+  margin-top: 30px;
+}
+.more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
 }
