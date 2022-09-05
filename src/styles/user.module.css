@@ -8,7 +8,7 @@
   background-color: #e36d63;
   margin: 15px 0;
   color: white;
-  border-radius: 10px 0 0 10px;
+  border-radius: 6px 0 0 6px;
   width: 120px;
   transition: 0.3s;
   overflow: hidden;
@@ -23,7 +23,7 @@
 .container:hover > .userGreen,
 .container:hover > .userRed {
   width: 100% !important;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .userProfile {
   display: flex;
@@ -31,7 +31,7 @@
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.068);
   width: 120px;
-  margin: 10px 0;
+
   padding: 0 15px;
 }
 .avatar {
@@ -63,14 +63,18 @@
 
 .information {
   text-align: center;
+  margin: auto;
   width: 100%;
-  min-width: 360px;
+  height: 100%;
+  min-width: 330px;
   padding: 0 10px;
 }
 
 .name {
   font-size: 30px;
-  margin: 20px 0 0;
+  margin: 20px 0 !important;
+  text-align: center;
+
 }
 .detailsGroup {
   display: flex;
@@ -80,6 +84,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .stats div {
   margin: 0 8px;
